@@ -1,0 +1,16 @@
+# @package _global_
+
+optimizer:
+  type: AdamW
+  lr: 2.0e-4  # TODO : original 2.0e-4
+  eps: 1.0e-3  # for fp16    #### original 1.0e-3
+  weight_decay: 1.0e-2
+  # paramwise_cfg:
+  #   - name: backbone
+  #     lr_mult: 0.1
+
+scheduler:
+  type: MultiStepLR
+  milestones: [12]  # original 25
+  gamma: 0.1
+

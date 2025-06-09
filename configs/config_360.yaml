@@ -1,0 +1,40 @@
+# Refer to Hydra documentation for more information about config group defaults.
+# - https://hydra.cc/docs/tutorials/basic/your_first_app/defaults/
+# - https://hydra.cc/docs/patterns/configuring_experiments/
+
+defaults:
+  - datasets: kitti_360
+  - models: iascene
+  - schedules: adamw_lr2e-4_30e
+  - _self_
+
+hydra:
+  mode: MULTIRUN  # refer to https://github.com/Lightning-AI/lightning/pull/11617
+  sweep:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M}
+
+trainer:
+  devices: 2
+  accelerator: gpu
+  accumulate_grad_batches: 2
+  # strategy: ddp
+  strategy: ddp_find_unused_parameters_true
+  sync_batchnorm: True
+  # precision: 16-mixed
+  enable_progress_bar: True
+  max_epochs: 30
+
+
+data:
+  datasets: # base voxel_size=0.2 
+    project_scale: 2  # default project_scale=2, using smaller scale to save memory 
+  loader:
+    batch_size: 1
+
+
+save:
+  logger_dir_name: DISC
+  logger_version_name:  DISC-v1-360 # default version_1,...version_n
+
+resume:
+  ckpt_path: None
