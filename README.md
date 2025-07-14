@@ -1,11 +1,12 @@
-# ** Disentangling Instance and Scene Contexts for 3D Semantic Scene Completion**
+# Disentangling Instance and Scene Contexts for 3D Semantic Scene Completion
 
 ![quality](./docs/quality_results.jpg)
 
 ## 🚀 News
 
-- **2025.6.xxxx** code released
-- **2025.6.xxxx** [**arXiv**](https://arxiv.org/abs/2405.13675) preprint released
+- **2025.7.15** code released
+- **2025.7.15** [**arXiv**](http://arxiv.org/abs/2507.08555) preprint released
+- **2025.6.26** accepted by ICCV 2025
 
 ## 📖 Introduction
 
@@ -74,8 +75,8 @@ We provide the pretrained weights on SemanticKITTI and KITTI360 datasets, reprod
 
 |                      Dataset                       |   IoU   |   mIoU   |                        Model Weights                         |                        Output Log                         |
 | :------------------------------------------------: | :-----: | :------: | :----------------------------------------------------------: | :-------------------------------------------------------: |
-| [SemanticKITTI](configs/semantickitti_CGFormer.py) | 45.32   | 17.35    | [Link](https://github.com/pkqbajng/CGFormer/releases/download/v1.0/CGFormer_semantickitti.ckpt) | [Log](https://github.com/pkqbajng/CGFormer/releases/download/v1.0/CGFormer_semantickitti.log) |
-|   [KITTI360](configs/semantickitti_CGFormer.py)    | 47.35   | 20.55    | [Link](https://github.com/pkqbajng/CGFormer/releases/download/v1.0/CGFormer_kitti360.ckpt)      | -      |
+| [SemanticKITTI](configs\datasets\semantic_kitti.yaml) | 45.32   | 17.35    | [Link](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/DISC_SemanticKitti.ckpt) | [Log](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/stdout.txt) |
+|   [KITTI360](configs\datasets\kitti_360.yaml)    | 47.35   | 20.55    | [Link](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/DISC_KITTI360.ckpt)      | -      |
 
 ## 🌟 Acknowledgement
 
@@ -95,5 +96,13 @@ Since it is difficult to include every referenced project, please let us know if
 If you find our work beneficial for your research, please consider citing our paper and give us a star:
 
 ```
-
+@misc{liu2025disentanglinginstancescenecontexts,
+      title={Disentangling Instance and Scene Contexts for 3D Semantic Scene Completion}, 
+      author={Enyu Liu and En Yu and Sijia Chen and Wenbing Tao},
+      year={2025},
+      eprint={2507.08555},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.08555}, 
+}
 ```
