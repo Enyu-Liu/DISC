@@ -145,7 +145,6 @@ weights/
 pretrain/*.pth
 pretrain/*.pt
 pretrain/*.ckpt
-datasets/
 data/
 checkpoints/
 
