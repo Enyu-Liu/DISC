@@ -75,8 +75,8 @@ We provide the pretrained weights on SemanticKITTI and KITTI360 datasets, reprod
 
 |                      Dataset                       |   IoU   |   mIoU   |                        Model Weights                         |                        Output Log                         |
 | :------------------------------------------------: | :-----: | :------: | :----------------------------------------------------------: | :-------------------------------------------------------: |
-| [SemanticKITTI](configs\config_sema.yaml) | 45.32   | 17.35    | [Link](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/DISC_SemanticKitti.ckpt) | [Log](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/stdout.txt) |
-|   [KITTI360](configs\config_360.yaml)    | 47.35   | 20.55    | [Link](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/DISC_KITTI360.ckpt)      | -      |
+| [SemanticKITTI](configs/config_sema.yaml) | 45.32   | 17.35    | [Link](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/DISC_SemanticKitti.ckpt) | [Log](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/stdout.txt) |
+|   [KITTI360](configs/config_360.yaml)    | 47.35   | 20.55    | [Link](https://github.com/Enyu-Liu/DISC/releases/download/v1.0.0/DISC_KITTI360.ckpt)      | -      |
 
 ## 🌟 Acknowledgement
 
