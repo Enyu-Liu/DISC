@@ -146,6 +146,7 @@ pretrain/*.pth
 pretrain/*.pt
 pretrain/*.ckpt
 data/
+!ssc_ia/data/
 checkpoints/
 
 # Large files
